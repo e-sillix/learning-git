@@ -8,22 +8,13 @@ git init : intialzes a empty git repo(git repo stored in folder name .git)
 git status : writes what happened ,when,who.
 git add name.txt : addes file name 'name.txt' in stage and you can check it with status command .
 git add . : add all files.
-git commit -m "this one commited." : saves all the add files and m here is message on it.
+git -commit -m "this one commited." : saves all the add files and m here is message on it.
 vi names.txt : let's you edit file.
-:x : to quit and save vim.
 :q : to quit vim(press esc key before that).
 or
 :wq! : force save and quit. 
 cat names.txt : let's you read file.
 git restore --staged names.txt : remove names from stage area.
 or 
-git rm --cached names.txt : does the same job. 
+git rm --cached names.txt:does the same job. 
 git reset : removes all files from stage area.
-git log : to see history.
-rm -rf names.txt : deletes the file.
-to revert previous commits get that commit id from git log.copy it.
-git stash : this will put all things you add in stage area in stash.
-git stash clear : this clear stash permanently .
-
-to get a deleted file(after commiting):
-get the previous commit id.then, reset it.then stash it .remove the stash (if you pop the stash it will get deleted again.)
